@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+
+/* resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* generaL  */
+:root {
+/* fonts  */
+--font-primary: "Overpass", sans-serif;
+--font-wt-regular: 400;
+--font-wt-bold: 700;
+
+/* colors  */
+--primary: hsl(25, 97%, 53%);
+--neutral-white: hsl(0, 0%, 100%);
+--neutral-light: hsl(217, 12%, 63%);
+--neutral-medium: hsl(216, 12%, 54%);
+--neutral-medium-0-3: hsla(216, 12%, 54%, 0.3);
+--neutral-medium-0-1: hsla(216, 12%, 54%, 0.1);
+--neutral-dark: hsl(213, 19%, 18%);
+--neutral-black: hsl(216, 12%, 8%);
+}
+
+body {
+    font-family: var(--font-primary);
+    font-size: 15px;
+    background-color: var(--neutral-black);
+}
+
+h1 {
+    color: var(--neutral-white);
+}
+
+/* main - ratings component  */
+.rating-component {
+    min-width: 24em;
+    display: flex;
+    flex-flow: column nowrap;    
+    gap: 1rem;
+    width: 95%;
+    padding: 2rem;
+    margin: 8rem auto;
+    background: linear-gradient(to left top, var(--neutral-dark), var(--neutral-black));
+    border-radius: 1rem;   
+}
+
+.options-container {
+    list-style-type: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.options-container li {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 0;    
+}
+
+fieldset {
+    appearance: none;
+    border: none;
+}
+
+p,
+legend {
+    font-size: 1rem;
+    line-height: 1.3rem;
+    margin-bottom: 1rem;
+    color: var(--neutral-medium);
+}
+
+input[type="radio"] {
+   appearance: none;
+}
+
+.circle {   
+    width: 3rem; 
+    height: 2.7rem;
+    text-align: center;
+    padding: 0.8rem 0;
+    background-color: var(--neutral-medium-0-3);
+    color: var(--neutral-light);
+    border-radius: 100%;
+}
+
+label {
+    cursor: pointer;
+}
+
+label:hover {
+    background-color: var(--neutral-medium);
+    color: var(--neutral-white);
+}
+
+input[type="radio"]:checked + label,
+input[type="radio"]:default + label {
+    background-color: var(--primary);
+    color: var(--neutral-white);
+}
+
+.rating-btn {
+    cursor: pointer;
+    appearance: none;
+    border: none;   
+    width: 100%;
+    margin: 1.5rem auto 0 auto;
+    padding: 0.8em;
+    font-family: inherit;
+    font-weight: var(--font-wt-bold);
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    background-color: var(--primary);
+    color: var(--neutral-white);
+    border-radius: 1rem;
+}
+
+.rating-btn:hover,
+.rating-btn:active,
+.rating-btn:focus {
+    background-color: var(--neutral-white);
+    color: var(--primary);
+}
+
+/* Thank you */
+.thankyou {
+    align-items: center;
+}
+
+.thankyou img {
+    width: 50%;
+    margin-bottom: 1rem;
+}
+
+.thankyou p {
+    text-align: center;
+}
+
+.output {
+    padding: 0.7rem;
+    background-color: var(--neutral-medium-0-1);
+    color: var(--primary);
+    border-radius: 1.5rem;
+}
+
+/* footer  */
+.attribution {
+    font-size: 11px; 
+    text-align: center;
+    color: var(--neutral-light); 
+}
+
+.attribution a {
+    color: var(--primary); 
+}
+
+@media (min-width:450px) {
+    .rating-component,
+    .thankyou {
+        max-width: 29em;
+    }    
+}
