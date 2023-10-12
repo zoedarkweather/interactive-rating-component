@@ -30,9 +30,10 @@ function showThankyou(rating) {
     const heading = document.createElement("h1");
     const para = document.createElement("p");
 
+    main.setAttribute("aria-live", "assertive")
     container.setAttribute("class", "rating-component thankyou");
     image.setAttribute("src", "./images/illustration-thank-you.svg");
-    image.setAttribute("alt", "cartoon drawing of a machine");
+    image.setAttribute("alt", "");
     output.setAttribute("class", "output");
     output.textContent = `You selected ${rating} out of 5`;
     heading.textContent = "Thank you!";
