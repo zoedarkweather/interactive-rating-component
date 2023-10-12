@@ -27,6 +27,10 @@
 }
 
 body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-family: var(--font-primary);
     font-size: 15px;
     background-color: var(--neutral-black);
@@ -44,7 +48,6 @@ h1 {
     gap: 1rem;
     width: 95%;
     padding: 2rem;
-    margin: 8rem auto;
     background: linear-gradient(to left top, var(--neutral-dark), var(--neutral-black));
     border-radius: 1rem;   
 }
@@ -150,6 +153,7 @@ input[type="radio"]:default + label {
 
 /* footer  */
 .attribution {
+    margin-top: 2em;
     font-size: 11px; 
     text-align: center;
     color: var(--neutral-light); 
