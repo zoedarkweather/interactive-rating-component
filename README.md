@@ -47,10 +47,11 @@ Users should be able to:
 - Mobile-first workflow
 - JavaScript
 
-
 ### What I learned
 
-I'd just completed several relevant sections of the MDN Frontend Developer Course - Advanced Form Styling, UI Pseudo Classes, and Client-side Validation, so this was an opportunity to practice some of the things I've learned. I used radio buttons for the rating options as that seemed to make the most sense and be the most accessable way to do it. I had difficulty styling them at first and then I realized I should style the labels instead. I'm not sure if this was the correct way to do it, so any feedback on those choices would be helpfuls.
+I'd just completed several relevant sections of the MDN Frontend Developer Course - Advanced Form Styling, UI Pseudo Classes, and Client-side Validation, so this was an opportunity to practice some of the things I've learned. I used radio buttons for the rating options as that seemed to make the most sense and be the most accessable way to do it. I had difficulty styling them at first and then I realized I should style the labels instead. I'm not sure if this was the correct way to do it, so any feedback on those choices would be helpful.  
+
+10/11 updates: Centered component on page, added aria-live attribute so "thank you" is read by screen reader. Radio buttons are currently not able to be checked using the keyboard. Need to get help with this.
 
 ### Continued development
 
