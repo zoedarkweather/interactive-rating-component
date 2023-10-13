@@ -15,7 +15,6 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
-
 ## Overview
 
 ### The challenge
@@ -30,7 +29,6 @@ Users should be able to:
 ### Screenshot
 
 ![](./screenshot.png)
-
 
 ### Links
 
@@ -51,20 +49,21 @@ Users should be able to:
 
 I'd just completed several relevant sections of the MDN Frontend Developer Course - Advanced Form Styling, UI Pseudo Classes, and Client-side Validation, so this was an opportunity to practice some of the things I've learned. I used radio buttons for the rating options as that seemed to make the most sense and be the most accessable way to do it. I had difficulty styling them at first and then I realized I should style the labels instead. I'm not sure if this was the correct way to do it, so any feedback on those choices would be helpful.  
 
-10/11 updates: Centered component on page, added aria-live attribute so "thank you" is read by screen reader. Radio buttons are currently not able to be checked using the keyboard. Need to get help with this.
+10/11 updates: Centered component on page, added aria-live attribute so "thank you" is read by screen reader. Radio buttons are currently not able to be checked using the keyboard.  
+
+10/13 updates: Made radio buttons accessible by styling them directly rather than hiding them and styling their labels. Also made minor changes to html, removing unneccessary elements.
 
 ### Continued development
 
-Continue practicing styling form elements. 
+Continue practicing styling form elements.
 
 ### Useful resources
 
-- [MDN - Advance Form Styling](https://developer.mozilla.org/en-US/docs/Learn/Forms/Advanced_form_styling) - This chapter helped me learn how to remove default styling from form controls.
+- [https://www.scottohara.me/blog/2021/09/24/custom-radio-checkbox-again.html](https://www.scottohara.me/blog/2021/09/24/custom-radio-checkbox-again.html) - Accessible styled radio buttons and checkboxes - direct styling now supported in modern browsers.
 
+- [MDN - Advance Form Styling](https://developer.mozilla.org/en-US/docs/Learn/Forms/Advanced_form_styling) - This chapter helped me learn how to remove default styling from form controls.
 
 ## Author
 
 - Github - [https://github.com/zoedarkweather](https://github.com/zoedarkweather)
 - Frontend Mentor - [@zoedarkweather](https://www.frontendmentor.io/profile/zoedarkweather)
-
-
