@@ -1,14 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
 
-
-/* resets */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* generaL  */
 :root {
 /* fonts  */
 --font-primary: "Overpass", sans-serif;
@@ -26,18 +23,20 @@
 --neutral-black: hsl(216, 12%, 8%);
 }
 
+/* generaL  */
 body {
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: var(--font-primary);
-    font-size: 15px;
+    font-size: 0.94rem;
     background-color: var(--neutral-black);
 }
 
 h1 {
     color: var(--neutral-white);
+    margin: 0.5em 0;
 }
 
 /* main - ratings component  */
@@ -45,41 +44,33 @@ h1 {
     min-width: 24em;
     display: flex;
     flex-flow: column nowrap;    
-    gap: 1rem;
     width: 95%;
     padding: 2rem;
     background: linear-gradient(to left top, var(--neutral-dark), var(--neutral-black));
     border-radius: 1rem;   
 }
 
-.options-container {
-    list-style-type: none;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-}
-
-.options-container li {
-    display: flex;
-    flex-flow: row nowrap;
-    gap: 0;    
-}
-
-fieldset {
-    appearance: none;
+fieldset {   
+    appearance: none;    
     border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
 }
 
 p,
 legend {
     font-size: 1rem;
     line-height: 1.3rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     color: var(--neutral-medium);
 }
 
 input[type="radio"] {
    appearance: none;
+   cursor: pointer;  
+   vertical-align: middle;
 }
 
 .circle {   
@@ -88,22 +79,33 @@ input[type="radio"] {
     text-align: center;
     padding: 0.8rem 0;
     background-color: var(--neutral-medium-0-3);
-    color: var(--neutral-light);
     border-radius: 100%;
 }
 
 label {
     cursor: pointer;
+    color: var(--neutral-light);    
+    margin-left: -2.1em;
 }
 
-label:hover {
-    background-color: var(--neutral-medium);
-    color: var(--neutral-white);
+input[type="radio"]:hover,
+input[type="radio"]:focus {
+    outline: none;
+    background-color: var(--neutral-medium);    
+}
+
+input[type="radio"]:hover + label,
+input[type="radio"]:focus + label{
+    color: var(--neutral-white);   
+}
+
+input[type="radio"]:checked,
+input[type="radio"]:default {
+    background-color: var(--primary);
 }
 
 input[type="radio"]:checked + label,
 input[type="radio"]:default + label {
-    background-color: var(--primary);
     color: var(--neutral-white);
 }
 
@@ -126,6 +128,7 @@ input[type="radio"]:default + label {
 .rating-btn:hover,
 .rating-btn:active,
 .rating-btn:focus {
+    outline: none;
     background-color: var(--neutral-white);
     color: var(--primary);
 }
@@ -133,6 +136,11 @@ input[type="radio"]:default + label {
 /* Thank you */
 .thankyou {
     align-items: center;
+    padding-bottom: 0;
+}
+
+.thankyou h1 {
+    margin-top: 0;
 }
 
 .thankyou img {
@@ -154,7 +162,7 @@ input[type="radio"]:default + label {
 /* footer  */
 .attribution {
     margin-top: 2em;
-    font-size: 11px; 
+    font-size: 0.7rem; 
     text-align: center;
     color: var(--neutral-light); 
 }
